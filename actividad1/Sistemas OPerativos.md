@@ -23,8 +23,40 @@ Erick Enrique González Chávez 201900621
 
 ### USER
 
-Cuando se usan el modo User los programas ejecutados debe ser realizado por medio de syscalls.
+Cuando se usan el modo User los programas ejecutados debe ser realizado por medio de system calls.Se tiene el uso de espacion de direccion virtual.
 
 ### KERNEL
 
-Es el centro de los sistemas operativos.
+Es el centro de los sistemas operativos.En el se gestiona el horario de utilizacion por programa de los recursos.Maneja la interaccion en el software y hardware. Es el programa mas privilegiado y puede interactuar con el hardware directamente. 
+
+## Interrupciones Vs Traps
+
+### Traps
+
+- Es una señal de programa de usario intruyendo al sistema operativo para realizar una funcion inmediata
+
+- Es un proceso sincrono
+
+- Todas las Traps son interrupciones.
+
+- Solo puede ocurrir de dispositivos de software.
+
+- Una instrucion de programa de usuario la genera.
+
+- Ejecuta funciones especificas en el sistema operativo y le da el control al controlador de traps.
+
+### Interrupciones
+
+- Es una señal al CPU emitida por el hardware para indicar un evento que requiera atencion inmediata.
+
+- Es un proceso asincrono
+
+- No todas las interrupciones son traps.
+
+- Sucede a partir de dispositivos de hardware.
+
+- Dispositivos de hardware lo generan.
+
+- Tambien es conocido como interrupcion de hardware.
+
+- Fuerza al CPU de disparar un controlador especifico de rutina.

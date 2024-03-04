@@ -1,0 +1,6 @@
+[Unit]
+After=network.target
+[Service]
+ExecStart=/home/erick/Documentos/erick/so1_actividades_201900621/actividad3/script.sh
+[Install]
+WantedBy=default.target

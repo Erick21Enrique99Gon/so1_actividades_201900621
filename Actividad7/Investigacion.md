@@ -7,8 +7,10 @@ Esta baso en clases de scheduling, donde a cada clase se le atribuye una priorid
 
 El kernel estandar de linux implementa el por defecto el scheduling de clases con el algoritmo the scheduling CFS y clase de tiempo de scheduling.
 
-
+El CFS no asigna prioridades directamente. 
 
 ## Funcionamiento
 
 El CFS asi asigna una proporcion de tiempo de procesamiento a cada tarea.Esta proporcion esta calculada vasada en el buen valor asignada a cada tarea. El buen valor tiene un rango de -20 a 19, donde el menor valor indica un alto valor relativo que se refiere a recibir una mayor proporcion de proceso. 
+
+Graba la cantidad de tiempo que se mantienen corriendon los cada tarea, a traves del tiempo de corriemiento virtual de cada tarea usando la variable vruntijme. 
